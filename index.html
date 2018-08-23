@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cash Out</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./resources/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Moby Dick Restaurant</h1>
+        <h2>Cash Out Calculator</h2>
+    </header>
+
+    <div>
+        <h3>Float</h3>
+        <input type="number" value="500">
+    </div>
+    
+    <div class="cashinputcontainer">
+        <h3>Please enter the quantity of the coins and bills</h3>
+        <p>10's</p>
+        <input type="number" id="tenInput">
+        <p>5's</p>
+        <input type="number" id="fiveInput">
+        <p>2's</p>
+        <input type="number" id="twoInput">
+        <p>1's</p>
+        <input type="number" id="oneInput">
+        <p>Quarters</p>
+        <input type="number" id="quarterInput">
+        <p>Assume Dimes and Nickels are five dollars in value</p>
+        <div class="cashoutputcontainer">
+            <button id="cashCalculate">Calculate</button>
+            <p>Cash in the register</p>
+            <p id="cashOutput"></p>
+        </div>
+        
+    </div>
+
+    <div class="replenishcontainer">
+
+    </div>
+</body>
+<script src="./resources/js/main.js" type="text/javascript"></script>
+</html>

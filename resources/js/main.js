@@ -115,7 +115,7 @@ const parentObj = {
                 continue
             }
             //new if statements to bring the input values higher
-            if (parentObj.twoObj.twoInput + 25 <= 80 && parentObj.inputSum + 50 <= 500) {
+            if (parentObj.twoObj.twoInput + 25 <= 75 && parentObj.inputSum + 50 <= 500) {
                 parentObj.twoObj.twoInput += 25
                 parentObj.twoObj.twoCounter += 25
                 parentObj.inputSum += 50

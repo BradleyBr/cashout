@@ -1,0 +1,82 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    background-image: url('../../resources/images/mobybanner.jpg');
+    height: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Eczar', serif;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+b {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.parentcontainer {
+    background-color: #6bc6f0;
+    height: 1000px;
+}
+
+.content {
+    position: relative;
+    border: 2px rgb(66, 72, 77) groove;
+    outline: 2px grey groove;
+    outline-offset: 0.5px;
+    top: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+    background-color: rgba(156, 197, 224, 0.8);
+    width: 65%;
+    min-height: 650px;
+}
+
+.replenishcontainer h1 {
+    font-size: 1.3rem;
+    font-family: 'Eczar', serif;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.replenishflexbox {
+    display: flex;
+    position: relative;
+    right: 2rem;
+    justify-content: space-around;
+}
+
+#replenish {
+    border-right: solid black 1px;
+    padding-right: 3rem;
+}
+
+#registertotal {
+    position: relative;
+    right: 2rem;
+}

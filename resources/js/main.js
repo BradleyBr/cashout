@@ -9,14 +9,7 @@ const parentObj = {
         tenCounter: 0,
         inputElement: function () {
             this.tenInputElement.addEventListener('blur', function (event) {
-                // if (parentObj.tenObj.tenInput !== 0) {
-                //     parentObj.inputSum -= (parentObj.tenObj.tenInput * 10)
-                //     parentObj.outputSum -= (parentObj.tenObj.tenInput * 10)
-                // }
                 parentObj.tenObj.tenInput = Number(event.target.value)
-                // parentObj.tenObj.tenOutput = Number(event.target.value)
-                // parentObj.inputSum += (Number(event.target.value) * 10)
-                // parentObj.outputSum += (Number(event.target.value) * 10)
             })
         }
     },
@@ -27,14 +20,7 @@ const parentObj = {
         fiveCounter: 0,
         inputElement: function() {
             this.fiveInputElement.addEventListener('blur', function (event) {
-                // if (parentObj.fiveObj.fiveInput !== 0) {
-                //     parentObj.inputSum -= (parentObj.fiveObj.fiveInput * 5)
-                //     parentObj.outputSum -= (parentObj.fiveObj.fiveInput * 5)
-                // }
                 parentObj.fiveObj.fiveInput = Number(event.target.value)
-                // parentObj.fiveObj.fiveOutput = Number(event.target.value)
-                // parentObj.inputSum += (Number(event.target.value) * 5)
-                // parentObj.outputSum += (Number(event.target.value) * 5)
             })
         }
     },
@@ -45,14 +31,7 @@ const parentObj = {
         twoCounter: 0,
         inputElement: function() {
             this.twoInputElement.addEventListener('blur', function (event) {
-                // if (parentObj.twoObj.twoInput !== 0) {
-                //     parentObj.inputSum -= (parentObj.twoObj.twoInput * 2)
-                //     parentObj.outputSum -= (parentObj.twoObj.twoInput * 2)
-                // }
                 parentObj.twoObj.twoInput = Number(event.target.value)
-                // parentObj.twoObj.twoOutput = Number(event.target.value)
-                // parentObj.inputSum += (Number(event.target.value) * 2)
-                // parentObj.outputSum += (Number(event.target.value) * 2)
             })
         }
     },
@@ -63,14 +42,7 @@ const parentObj = {
         oneCounter: 0,
         inputElement: function() {
             this.oneInputElement.addEventListener('blur', function (event) {
-                // if (parentObj.oneObj.oneInput !== 0) {
-                //     parentObj.inputSum -= parentObj.oneObj.oneInput
-                //     parentObj.outputSum -= parentObj.oneObj.oneInput
-                // }
                 parentObj.oneObj.oneInput = Number(event.target.value)
-                // parentObj.oneObj.oneOutput = Number(event.target.value)
-                // parentObj.inputSum += Number(event.target.value)
-                // parentObj.outputSum += Number(event.target.value)
             })
         }
     },
@@ -81,14 +53,7 @@ const parentObj = {
         quarterCounter: 0,
         inputElement: function() {
             this.quarterInputElement.addEventListener('blur', function (event) {
-                // if (parentObj.quarterObj.quarterInput !== 0) {
-                //     parentObj.inputSum -= (parentObj.quarterObj.quarterInput / 4)
-                //     parentObj.outputSum -= (parentObj.quarterObj.quarterInput / 4)
-                // }
                 parentObj.quarterObj.quarterInput = Number(event.target.value)
-                // parentObj.quarterObj.quarterOutput = Number(event.target.value)
-                // parentObj.inputSum += (Number(event.target.value) / 4)
-                // parentObj.outputSum += (Number(event.target.value) / 4)
             })
         }
     },
@@ -227,7 +192,7 @@ const registerElement = document.getElementById('registertotal')
 cashCalculateElement.addEventListener('click', function () {
 
     document.getElementById('cashOutput').innerHTML = ''
-    document.getElementById('cashOutput').innerHTML = `<p><b>$${parentObj.inputSumFunc()}</b></p>`
+    document.getElementById('cashOutput').innerHTML = `<p>$<b>${parentObj.inputSumFunc()}</b></p>`
     parentObj.calculateAll()
     replenishElement.innerHTML = ''
     registerElement.innerHTML = ''
@@ -245,8 +210,8 @@ cashCalculateElement.addEventListener('click', function () {
                                 <p>Twos in the register: <b>${parentObj.twoObj.twoOutput}</b></p>
                                 <p>Ones in the register: <b>${parentObj.oneObj.oneOutput}</b></p>
                                 <p>Quarters in the register: <b>${parentObj.quarterObj.quarterOutput}</b></p>
-                                <p>Nickels and Dimes combined: <b>$12</b></p>
-                                <p>Total float: <b>$${parentObj.outputSum}</b></p>`
+                                <p>Nickels and Dimes combined: $<b>12</b></p>
+                                <p>Total float: $<b class="totalfloat">${parentObj.outputSum}</b></p>`
 })
 
 

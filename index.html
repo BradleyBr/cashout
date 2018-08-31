@@ -20,8 +20,9 @@
         <div class="content">
             <div>
                 <h3>Float</h3>
-                <select>
-                    <option value="500">500</option>
+                <select id="floatselect">
+                    <option value="500" selected="selected">500</option>
+                    <option value="250">250</option>
                 </select>
             </div>
                 
@@ -37,24 +38,35 @@
                 <input type="number" id="oneInput">
                 <p>Quarters</p>
                 <input type="number" id="quarterInput">
-                <h4>Assume Dimes and Nickels are five dollars in value</h4>
+                <p class="dimesmargin">Is there a roll of Dimes in the register</p>
+                <input type="radio" name="dimes" id="dimesTrueInput" value="yes">Yes
+                <input type="radio" name="dimes" id="dimesFalseInput" value="no">No
+                <p class="nickelsmargin">Is there a roll of Nickels in the register</p>
+                <input type="radio" name="nickels" id="nickelsTrueInput" value="yes">Yes
+                <input type="radio" name="nickels" id="nickelsFalseInput" value="no">No
+                
                 <div class="cashoutputcontainer">
                     <button id="cashCalculate">Calculate</button>
-                    <h4>Cash in the register</h4>
+                    <h4>Cash total in the register</h4>
                     <p id="cashOutput"></p>
                 </div>
             </div>
-            
+
             <div class="replenishcontainer">
                 <h1>Replenish the register</h1>
-                <div class="replenishflexbox">
-                    <div id="replenish">
-                    </div>
-                    <div class="borderlinemediastyle">
-                    </div>
-                    <div id="registertotal">
-                    </div>
+                <h4>Cash to take out of the register</h4>
+                <p id="cashdifference"></p>
+                <div class="replenishheader">
+                    <h2>Add to Float</h2>
+                    <h2 class="desktoptotalheader">Total</h2>
                 </div>
+                <div class="replenishflexbox">
+                    <div id="replenish"></div>
+                    <div class="borderline"></div>
+                    <h2 class="mediatotalheader">Total</h2>
+                    <div id="registertotal"></div>
+                </div>  
+                    
                 
             </div>
         </div>  

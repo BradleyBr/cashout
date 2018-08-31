@@ -1,32 +1,44 @@
 @media only screen and (max-width: 1220px) {
     .parentcontainer {
-        height: 1100px;
+        height: 1300px;
     }
 
     .replenishflexbox {
         flex-direction: column;
         width: auto;
+        right: 0;
     }
 
-    #replenish {
+    .replenishcontainer {
         border-right: none;
         margin-bottom: 1rem;
         padding-bottom: 1rem;
         padding-right: 0;
-        padding-left: 2rem;
         width: auto;
     }
 
-    .borderlinemediastyle {
+    .borderline {
         position: relative;
-        left: 1rem;
         border-top: 1px black solid;
+        border-right: none;
+        right: 0.5rem;
         margin-bottom: 1rem;
     }
 
     #registertotal {
         right: 0;
-        padding-left: 2rem;
+    }
+
+    .replenishheader {
+        width: auto;
+    }
+
+    .desktoptotalheader {
+        display: none;
+    }
+
+    .mediatotalheader {
+        display: inline;
     }
 }
 
@@ -52,7 +64,7 @@
 @media only screen and (max-width: 530px) {
 
     .parentcontainer {
-        height: 1250px;
+        height: 1300px;
     }
     
     header h1 {

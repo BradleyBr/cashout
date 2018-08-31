@@ -47,7 +47,7 @@ b {
 
 .parentcontainer {
     background-color: #6bc6f0;
-    height: 1000px;
+    height: 1100px;
 }
 
 .content {
@@ -81,34 +81,79 @@ select {
     margin-bottom: 1rem;
 }
 
+.dimesmargin {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.nickelsmargin {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    
+}
+
+#cashCalculate {
+    margin-top: 0.75rem;
+}
+
+.replenishcontainer {
+    padding-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 .replenishcontainer h1 {
     font-size: 1.3rem;
     font-family: 'Eczar', serif;
     margin-top: 0.3rem;
-    margin-bottom: 1rem;
+}
+
+.replenishcontainer h2 {
+    font-size: 1.2rem;
 }
 
 .replenishflexbox {
     display: flex;
     position: relative;
-    right: 2rem;
     justify-content: space-around;
+    right: 4rem;
+    width: 50rem;
 }
 
-.replenishflexbox h2 {
-    font-size: 1.2rem;
+.replenishheader {
+    display: flex;
+    justify-content: space-between;
+    width: 32rem;
 }
 
-#replenish {
-    border-right: solid black 1px;
-    padding-right: 3rem;
+#cashdifference {
+    margin-bottom: 1rem;    
+}
+
+.borderline {
+    border-right: 1px black solid;
 }
 
 #registertotal {
     position: relative;
-    right: 2rem;
 }
 
 .totalfloat {
     text-decoration: black underline double;
+}
+
+.floatflexbox {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+
+.totalflexbox {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+}
+
+.mediatotalheader {
+    display: none;
 }

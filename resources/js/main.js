@@ -408,11 +408,14 @@ cashCalculateElement.addEventListener('click', function () {
     let totalInput = parentObj.inputSumFunc() + parentObj.dimesObj.dimesInput + parentObj.nickelsObj.nickelsInput
     // cashDifference's purpose is to find how much to take out of register, in regards to using 20's, 50's and 100's, to make up the float in the smaller denominations
     const cashDifference = function () {
-        let difference = parentObj.outputSum - parentObj.inputSumFunc()
-        let modulusDifference = difference%20
+        let difference = parentObj.outputSum - totalInput
+        let modulusDifference = difference % 10
         if (modulusDifference !== 0) {
-            difference = difference + (20 - modulusDifference)
-            return difference
+            if (modulusDifference < 5) {
+               return difference = difference - modulusDifference
+            } else {
+                return difference = difference + (10 - modulusDifference)
+            }
         }
         return difference
     }
